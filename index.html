@@ -4,41 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App</title>
+    <title>Coffee Weather App</title>
   </head>
   <body>
-    <div class="weather-app">
-    <header>
-      <input type="search" placeholder="Enter a city…" required autofocus />
-      <input type="submit" value="search" />
-    </header>
-    <main>
-      <div>
-        <h1>New York</h1>
-        <p>
-          Tuesday 14:30, scattered clouds
-          <br />
-          Humidity: 83%, Wind: 3.5km/h
-        </p>
-      </div>
-      <div>⛅️12°C</div>
-    </main>
     <div>
-      <ul>
-        <li>Mon</li>
-        <li>Tue</li>
-        <li>Wed</li>
-        <li>Thur</li>
-        <li>Fri</li>
-        <li>Sat</li>
-      </ul>
+      <h1 class="top-cafe">Café Weather App</h1>
+      <img class="top-img" src="coffee.png" />
     </div>
-    <footer>
-      This project was coded by
-      <a href="#" target="_blank">Louisa Johansson</a> on
-      <a href="#" target="_blank">GitHub</a> and hosted on
-      <a href="#" target="_blank">Netify</a>
-    </footer>
+    <div class="weather-app">
+      <header class="search-bar">
+        <input
+          class="enter-city"
+          type="search"
+          placeholder="Enter a city…"
+          required
+          autofocus
+        />
+        <input class="search-city" type="submit" value="Search" />
+      </header>
+      <main>
+        <div>
+          <h1 class="h1">New York</h1>
+          <p class="description">
+            Tuesday 14:30, scattered clouds
+            <br />
+            Humidity: 83%, Wind: 3.5km/h
+          </p>
+        </div>
+        <div class="current-weather">
+          <div class="weather-emoji">⛅️</div>
+          <div class="current-temperature">12</div>
+          <div class="celsius">°C</div>
+        </div>
+      </main>
+      <div>
+        <ul class="week-weather">
+          <div>
+            <li class="week-day">
+              <p class="day">Mon</p>
+              <p class="small-emoji">🌤️</p>
+              <p>14°C</p>
+            </li>
+          </div>
+          <div>
+            <li class="week-day">
+              <p class="day">Tue</p>
+              <p class="small-emoji">🌤️</p>
+              <p>14°C</p>
+            </li>
+          </div>
+
+          <div>
+            <li class="week-day">
+              <p class="day">Wed</p>
+              <p class="small-emoji">🌤️</p>
+              <p>14°C</p>
+            </li>
+          </div>
+          <div>
+            <li class="week-day">
+              <p class="day">Thur</p>
+              <p class="small-emoji">🌤️</p>
+              <p>14°C</p>
+            </li>
+          </div>
+          <div>
+            <li class="week-day">
+              <p class="day">Fri</p>
+              <p class="small-emoji">🌤️</p>
+              <p>14°C</p>
+            </li>
+          </div>
+          <div>
+            <li class="week-day">
+              <p class="day">Sat</p>
+              <p class="small-emoji">🌤️</p>
+              <p>14°C</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <footer>
+        This project was coded by
+        <a href="#" target="_blank">Louisa Johansson</a> on
+        <a href="#" target="_blank">GitHub</a> and hosted on
+        <a href="#" target="_blank">Netify</a>
+      </footer>
+    </div>
+    <div class="fall2">
+      <img class="fall" src="fall.png" />
     </div>
     <script src="src/index.js"></script>
   </body>

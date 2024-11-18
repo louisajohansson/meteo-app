@@ -1,14 +1,149 @@
 body {
-    background: #D8D2C2;
-    font-family: 'Times New Roman', Times, serif;
+  background: #d8d2c2;
+  font-family: "Times New Roman", Times, serif;
 }
 
+.h1 {
+  border-bottom: 1px solid rgba(0, 128, 0, 0.5);
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.top-cafe {
+  text-align: center;
+  font-family: fantasy;
+  color: rgb(177, 116, 87);
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.top-img {
+  max-width: 60px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  display: block;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(216, 210, 194, 0.5);
+}
+.enter-city {
+  width: 65%;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+  background: #faf7f0;
+  font-size: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.search-city {
+  max-width: 35%;
+  padding: 10px 15px;
+  line-height: 1.5;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 16px;
+  background: rgba(177, 116, 87, 0.5);
+  cursor: pointer;
+  transition: all 220ms ease-in-out;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.search-city:hover {
+  background: rgba(177, 116, 87, 0.3);
+}
 .weather-app {
-    background: #FAF7F0;
-    margin: 50px auto;
-    padding: 30px;
-    max-width: 600px;
-    border-radius: 16px;
-    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-    border: 2px dotted #4A4947;
+  background: #faf7f0;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border: 2px dotted #4a4947;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: end;
+}
+
+.description {
+  margin-top: 25px;
+}
+.weather-emoji {
+  position: relative;
+  right: 30px;
+  font-size: 50px;
+  bottom: 45px;
+}
+.current-temperature {
+  position: relative;
+  right: 30px;
+  font-size: 70px;
+  font-weight: bold;
+  bottom: 55px;
+}
+.celsius {
+  position: relative;
+  right: 30px;
+  font-size: 30px;
+  bottom: 55px;
+}
+
+.week-weather {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 20px 15px 20px;
+  padding: 0;
+  line-height: 0.5;
+  text-align: center;
+}
+
+.week-day {
+  position: relative;
+  top: -40px;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.small-emoji {
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(177, 116, 87, 0.5);
+}
+
+footer a:hover {
+  color: rgba(177, 116, 87, 0.8);
+}
+
+.fall {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  bottom: 100px;
+  right: 130px;
+  max-width: 90px;
+}
+
+.fall2 {
+  display: flex;
+  margin-bottom: 0px;
 }
