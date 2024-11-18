@@ -133,17 +133,3 @@ footer a {
 footer a:hover {
   color: rgba(177, 116, 87, 0.8);
 }
-
-.fall {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  bottom: 100px;
-  right: 130px;
-  max-width: 90px;
-}
-
-.fall2 {
-  display: flex;
-  margin-bottom: 0px;
-}
