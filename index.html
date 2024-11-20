@@ -22,15 +22,22 @@
           required
           autofocus
         />
-        <input id="search-bar-search" class="search-city" type="submit" value="Search" />
+        <input
+          id="search-bar-search"
+          class="search-city"
+          type="submit"
+          value="Search"
+        />
       </header>
       <main>
         <div>
           <h1 class="h1" id="city"></h1>
           <p class="description">
-            Tuesday 14:30, scattered clouds
+            <span id="time"></span>, <span id="description">scattered clouds</span>
+
             <br />
-            Humidity: 83%, Wind: 3.5km/h
+            Humidity: <span class="bold" id="humidity"></span>%, Wind:
+            <span class="bold" id="wind-speed"></span>km/h
           </p>
         </div>
         <div class="current-weather">

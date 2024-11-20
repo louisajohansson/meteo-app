@@ -8,6 +8,11 @@ body {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
+.bold {
+  color: rgb(177, 116, 87);
+  font-weight: bold;
+}
+
 .top-cafe {
   text-align: center;
   font-family: fantasy;

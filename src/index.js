@@ -1,9 +1,45 @@
 function currentTemp(response) {
   let currentTemp = document.querySelector("#current-temp");
-let temperature = response.data.temperature.current;
+  let temperature = response.data.temperature.current;
   let h1 = document.querySelector("#city");
   h1.innerHTML = response.data.city;
+
+  console.log(response.data);
+
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.temperature.humidity;
+
+  let wind = document.querySelector("#wind-speed");
+  wind.innerHTML = response.data.wind.speed;
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.condition.description;
+
   currentTemp.innerHTML = Math.round(temperature);
+
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  timeElement.innerHTML = formatDate(date);
+}
+
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${day}, ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
@@ -15,7 +51,7 @@ function searchCity(city) {
 function pressButton(event) {
   event.preventDefault();
   let city = document.querySelector("#search-bar-input");
-  
+
   searchCity(city.value);
 }
 
