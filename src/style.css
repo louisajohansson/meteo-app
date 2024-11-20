@@ -65,6 +65,10 @@ body {
 .search-city:hover {
   background: rgba(177, 116, 87, 0.3);
 }
+
+.description {
+  margin-top: 25px;
+}
 .weather-app {
   background: #faf7f0;
   margin: 30px auto;
@@ -80,9 +84,7 @@ body {
   justify-content: end;
 }
 
-.description {
-  margin-top: 25px;
-}
+
 .weather-emoji {
   position: relative;
   right: 7px;
@@ -103,28 +105,39 @@ body {
   bottom: 55px;
 }
 
-.week-weather {
+.weather-forecast {
   display: flex;
   justify-content: space-around;
-  list-style: none;
-  margin: 0 20px 15px 20px;
-  padding: 0;
-  line-height: 0.5;
+  margin: 10px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
   text-align: center;
 }
-
-.week-day {
-  position: relative;
-  top: -40px;
+.weather-forecast-temperatures {
+  text-align: center;
+  color: rgba(177, 116, 87, 0.8);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-.day {
-  font-weight: bold;
+.weather-forecast-temperature {
+  padding: 0 2px;
+  display: inline;
 }
 
-.small-emoji {
-  font-size: 20px;
-}
+
 
 footer {
   text-align: center;
