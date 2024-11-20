@@ -2,23 +2,29 @@ function currentTemp(response) {
   let currentTemp = document.querySelector("#current-temp");
   let temperature = response.data.temperature.current;
   let h1 = document.querySelector("#city");
-  h1.innerHTML = response.data.city;
-
-  console.log(response.data);
-
-  let humidity = document.querySelector("#humidity");
-  humidity.innerHTML = response.data.temperature.humidity;
-
-  let wind = document.querySelector("#wind-speed");
-  wind.innerHTML = response.data.wind.speed;
-  let description = document.querySelector("#description");
-  description.innerHTML = response.data.condition.description;
-
-  currentTemp.innerHTML = Math.round(temperature);
-
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let description = document.querySelector("#description");
+  let humidity = document.querySelector("#humidity");
+  let wind = document.querySelector("#wind-speed");
+  let iconElement = document.querySelector("#weather-now-emoji");
+
+  h1.innerHTML = response.data.city;
+  humidity.innerHTML = response.data.temperature.humidity;
+  wind.innerHTML = response.data.wind.speed;
+  description.innerHTML = response.data.condition.description;
+  currentTemp.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-emoji" />`;
+}
+
+function formateDescription(emoji) {
+  if (description === "broken clouds") {
+    let emoji = document.querySelector("#weather-now-emoji");
+    emoji.innerHTML = url(
+      "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+    );
+  }
 }
 
 function formatDate(date) {

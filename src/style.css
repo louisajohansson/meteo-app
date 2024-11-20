@@ -85,9 +85,9 @@ body {
 }
 .weather-emoji {
   position: relative;
-  right: 30px;
+  right: 7px;
   font-size: 50px;
-  bottom: 45px;
+  bottom: 32px;
 }
 .current-temperature {
   position: relative;
