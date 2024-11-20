@@ -120,8 +120,9 @@ body {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperatures {
   text-align: center;
@@ -133,7 +134,7 @@ body {
 }
 
 .weather-forecast-temperature {
-  padding: 0 2px;
+  padding: 0 8px;
   display: inline;
 }
 
