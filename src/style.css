@@ -84,7 +84,6 @@ body {
   justify-content: end;
 }
 
-
 .weather-emoji {
   position: relative;
   right: 7px;
@@ -137,8 +136,6 @@ body {
   padding: 0 8px;
   display: inline;
 }
-
-
 
 footer {
   text-align: center;
