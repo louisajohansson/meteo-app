@@ -9,7 +9,7 @@
   <body>
     <div>
       <h1 class="top-cafe">Café Weather App</h1>
-      <img class="top-img" src="coffee.png" />
+      <img class="top-img" src="photos/coffee.png" />
     </div>
     <div class="weather-app">
       <header class="search-bar">
@@ -17,14 +17,15 @@
           class="enter-city"
           type="search"
           placeholder="Enter a city…"
+          id="search-bar-input"
           required
           autofocus
         />
-        <input class="search-city" type="submit" value="Search" />
+        <input id="search-bar-search" class="search-city" type="submit" value="Search" />
       </header>
       <main>
         <div>
-          <h1 class="h1">New York</h1>
+          <h1 class="h1" id="name-of-city">New York</h1>
           <p class="description">
             Tuesday 14:30, scattered clouds
             <br />
@@ -86,8 +87,8 @@
       </div>
       <footer>
         This project was coded by
-        <a href="#" target="_blank">Louisa Johansson</a> on
-        <a href="#" target="_blank">GitHub</a> and hosted on
+        <a href="#" target="_blank">Louisa Johansson</a> and is
+        <a href="#" target="_blank">open-sourced on GitHub</a> and hosted on
         <a href="#" target="_blank">Netify</a>
       </footer>
     </div>
